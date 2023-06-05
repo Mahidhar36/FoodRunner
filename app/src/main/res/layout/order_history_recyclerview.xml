@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/llRestaurantHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtRestaurantName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:fontFamily="sans-serif-medium"
+            android:padding="10dp"
+            android:text="Swirley's Shack"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtOrderDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="09/06/2020"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFoodItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRestaurantHeader"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="-10dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llOrderDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/llFoodItems"
+        android:background="@color/teal_200"
+        android:orientation="horizontal" />
+</RelativeLayout>

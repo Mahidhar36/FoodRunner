@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="5dp"
+     android:layout_marginStart="10dp"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="#ffff">
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+       android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:background="#ffff"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/Index"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+
+            android:textSize="18sp"
+           android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:text="5"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@color/teal_200"
+            />
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="3"
+              android:layout_marginStart="13dp">
+        <TextView
+            android:id="@+id/ItemName"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+
+
+             android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+              <TextView
+                  android:id="@+id/ItemCost"
+                  android:layout_width="match_parent"
+                  android:layout_height="15dp"
+                  android:layout_below="@id/ItemName"
+                  android:layout_marginTop="15dp"
+
+                  android:textColor="#B0A9A7 "
+                  android:textSize="12sp"
+                  android:textStyle="bold" />
+          </RelativeLayout>
+        <Button
+            android:id="@+id/AddToCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:backgroundTint="#fff"
+            android:layout_weight="2"
+            android:text="@string/add"
+
+            android:textColor="#ffff"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

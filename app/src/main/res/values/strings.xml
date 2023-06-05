@@ -1,0 +1,36 @@
+<resources>
+    <string name="appName">FoodRunner</string>
+    <string name="password">Password</string>
+    <string name="enterMobileNumber">Enter Mobile Number (10 digits)</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="name_of_the_restaurant">Name Of the Restaurant</string>
+    <string name="don_t_have_an_account_signup_now"><u>Don\'t have an account?SignUp now</u></string>
+    <string name="enter_mobile_number_10_digits">Enter Mobile Number (10 digits)</string>
+    <string name="favrestaurants">FavRestaurants</string>
+    <string name="myprofile">MyProfile</string>
+    <string name="home">Home</string>
+    <string name="orderhistory">OrderHistory</string>
+    <string name="faq">FAQ</string>
+    <string name="log_out">Log Out</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="phonenumber">Phonenumber</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">closE drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_min_4_characters">Password(Min 4 characters)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="mobile_number_10_digits">Mobile Number(10 digits)</string>
+    <string name="email_address"> Email Address</string>
+    <string name="name_min_3_characters">Name(Min 3 characters)</string>
+    <string name="next">Next</string>
+    <string name="enter_your_registered_mobilenumber_and_email_address">Enter your registered MobiLeNumber and Email address</string>
+    <string name="search_restaurants">Search Restaurants</string>
+    <string name="add">ADD</string>
+    <string name="proceed_to_cart">Proceed To Cart</string>
+
+
+</resources>

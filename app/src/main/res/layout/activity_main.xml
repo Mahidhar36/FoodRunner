@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/teal_200">
+
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/food_runner"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/MobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#ffffff"
+        android:hint="@string/enter_mobile_number_10_digits"
+        android:padding="10dp"
+        android:textColorHint="@color/HINT"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_phone"
+        />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/MobileNumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="#ffffff"
+        android:hint="@string/enterPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/HINT"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/ic_lock"
+     />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#4359C3"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/SignIn"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="@string/don_t_have_an_account_signup_now"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

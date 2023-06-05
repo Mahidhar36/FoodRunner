@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity"
+    android:background="#ffff">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_anchor="@+id/Toolbar1"
+        app:layout_anchorGravity="center"
+        app:layout_scrollFlags="scroll|enterAlways"
+        tools:ignore="NotSibling"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/PlaceOrder"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PlaceOrder"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/Toolbar1"
+        android:layout_height="match_parent"
+        android:layout_above="@id/PlaceOrder"
+        android:id="@+id/Scroll">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerCartItems"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffff"/>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/ProgressLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/Progressbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
